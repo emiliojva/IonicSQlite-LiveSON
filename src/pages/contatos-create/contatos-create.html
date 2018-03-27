@@ -1,0 +1,60 @@
+<!--
+  Generated template for the ContatosCreatePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>contatos-create</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-card>
+    <ion-card-content>
+      <ion-item>
+        <!-- stacked nome em cima levitando -->
+        <ion-label stacked>Nome</ion-label>
+        <ion-input [(ngModel)]="name"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <!-- stacked nome em cima levitando -->
+        <ion-label stacked>E-mail</ion-label>
+        <ion-input [(ngModel)]="email" type="email"></ion-input>
+      </ion-item>
+
+      <ion-item>
+          <!-- stacked nome em cima levitando -->
+          <ion-label stacked>Telefone</ion-label>
+          <ion-input [(ngModel)]="telefone" type="tel"></ion-input>
+      </ion-item>
+
+      <ion-item>
+          <!-- stacked nome em cima levitando -->
+          <ion-label stacked>Operadora</ion-label>
+          
+          <ion-select [(ngModel)]="operadora_id">
+
+            <ion-option value="1">Claro</ion-option>
+            <ion-option value="2">Oi</ion-option>
+            <ion-option value="3">Tim</ion-option>
+            <ion-option value="4">Vivo</ion-option>
+            
+          </ion-select>
+      </ion-item>
+
+      <button ion-button (click)="create()">Cadastrar</button>
+      <!-- <ion-button >Cadastrar</ion-button> -->
+
+    </ion-card-content>
+    
+      
+  </ion-card>
+
+</ion-content>
